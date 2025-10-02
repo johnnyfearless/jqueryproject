@@ -1,0 +1,47 @@
+html, body {
+  height: 100%;
+}
+
+body, #tvscreen {
+    background: linear-gradient(
+      var(--gradient-angle),
+      var(--start-color),
+      var(--end-color)
+    )
+  }
+  body {
+    color: #fff;
+    font-family: "Verdana", sans-serif;
+    background: #000;
+}
+h1 { font-size: 5em;
+     font-family: "Bebas Neue", sans-serif;
+     padding-bottom: 0;
+}
+h2 { font-size: 3em;
+  font-family: "Bebas Neue", sans-serif;
+  padding-top: 0;
+}
+
+:root {
+    --start-color: #ff7f50;
+    --end-color: #1e90ff;
+    --gradient-angle: 90deg;
+}
+
+.vc-chrome {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    z-index: 9;
+}
+  
+.container-fluid {
+    border-radius: 25px;
+    background: #000000;
+    padding: 20px;
+    margin: 30px 30px 0px 30px;
+    max-width: 1300px;
+  }
+  
+  input, button { color: #000000;}

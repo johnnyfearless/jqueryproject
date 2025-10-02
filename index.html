@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascript/Jquery project - Gradient Generator</title>
+    <meta name="description" content="A website to demonstrate a gradient generator">
+    <meta name="keywords" content="javascrpt, jquery, demo, gradients, toronto, class, CBC, Canada">
+    <meta name="author" content="John Maher">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Generated gradient shows up as the body background-->
+<body>
+        <div class="container-fluid">
+            <div class="col-lg-6">
+                <h1 id="page_heading">Gradient Generator</h1><br>
+                <h2>Select Your Colours:</h2>
+                <div class="col-lg-3">
+                    <!-- Made use of "color" input fields, which I never knew existed before! Very handy. -->
+                    <label for="start-color">Start Color:</label>
+                    <input type="color" id="start-color" value="#ff7f50" /><br><br>
+                    <label for="hexcolor1">HEX value: </label><span id="hexcolor1"></span>
+                </div>
+                <div class="col-lg-3">
+                    <label for="end-color">End Color:</label>
+                    <input type="color" id="end-color" value="#1e90ff" /><br><br>
+                    <label for="hexcolor2">HEX value: </label><span id="hexcolor2"></span>
+                </div>
+            </div>
+            <div class="col-lg-6 align-items-center" id="television">
+                <table width="600" height="521">
+                    <tr><td colspan="3" height="5"><img src="images/tv_top.png" width="600" height="21"></td></tr>
+<!-- Generated gradient shows up as the TV screen background-->                    
+                    <tr><td><img src="images/tv_left.png" width="100" height="234"></td><td id="tvscreen"><img src="images/tv_main.png" width="373" height="234"></td><td><img src="images/tv_right.png" width="127" height="234"></td></tr>        
+                    <tr><td colspan="3"><img src="images/tv_bottom.png"></td></tr>        
+                </table>
+            </div>
+        </div>
+        <script src="js/main.js"></script>        
+</body>
+</html>
